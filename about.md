@@ -10,4 +10,4 @@ Hi! I'm Wes! I'm a first year software engineering student at Michigan Technolog
 While I would love to post on this more, being a college student, involved in extra curriculars and an AFROTC cadet, which leaves me strapped for cash and time, so I'll post when I can, but it probably won't be regular. Thanks for understanding.
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[wmgrove@mtu.edu](mailto:wmgrove@mtu.edu)
