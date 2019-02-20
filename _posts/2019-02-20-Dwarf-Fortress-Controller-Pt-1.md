@@ -3,7 +3,7 @@ layout: post
 title: DIY Dwarf Fortress Controller Part 1 | Planning the Controller
 ---
 
-I'm personally a big fan of Dwarf Fortress, however, the UI... Let's just say that at time it leaves something to be desired. Worse yet, I like to play some games on my TV, and would love to do so with DF, but, the interface just does not work for that, and to top it off, I don't have akeyboard to do that with anyways.
+I'm personally a big fan of Dwarf Fortress, however, the UI... Let's just say that at this time it leaves something to be desired. Worse yet, I like to play some games on my TV, and would love to do so with DF, but, the interface just does not work for that, and to top it off, I don't have akeyboard to do that with anyways.
 
 That's when inspiration struck! The DF menu system consists of submenus of submenus, going down until you find what you need, but the choices for most of the menu are 100% consistent. This led me to the idea of a small controller, similar to those old 20-questions toys, with just the yes/no/don't know buttons on them and a small LCD display.
 
