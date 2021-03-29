@@ -1,0 +1,30 @@
+---
+layout: post
+title: Home Automation Part 1 | Planning the House
+---
+
+One of the biggest projects that I want to undertake is automating my home. Of course, I like things to be cheap, I love open source technology, and I also like security, as such, those are my primary goals. I also want it to be voice controlled, and save me money in terms of electricity.
+
+Lets start with what it should do, in order of importance.
+* Control lights
+* Control heating
+* Control doors and locks
+* Control blinds
+* Calendar
+* Control light color
+* Control music
+* "Mood" controls
+* Control other household appliances
+* Other tasks
+
+There's a lot there. Let's unpack it, starting with the lights.
+
+Lights are easy enough to control, they only have to have two states, on and off. However many lights today are inefficient, which uses extra electricity. They also have to be replaced often, costing me more overall in hardware. As such, I want to defeat all of this as much as possible. and there's a very easy solution: LEDs. LEDs can be bought for low prices, use little energy for the light they produce, and they can vary their color and intensity, all useful in the system I'm designing. There are LED replacement bulbs, even ones that can change hue and interface with home automations systems, but that once again drastically increases price. Instead, my solution is to run regular LEDs in place of conventional lighting hooked up to Arduinos connected to an MSQTT server.
+
+That brings us to an interesting area, MSQTT. to paraphrase explanations I've heard elsewhere, it's like a public whiteboard, where anyone can change it whenever they please, and at specified intervals, it's checked and the information upon it acted upon. This provides lots of cool oppurtunities, for example, each light can have it's state marked on the server and check it quickly and often. this also means that there are multiple ways of interfacing with said light, in my case, various voice control stations and buttons to replace light switches. whichever is the most recent controls the light, so someone can push a button to turn on the light, but then use voice controls to turn it off. MSQTT would also allow for color control, controlling the heating, doors and locks, and household appliances with its functionality.
+
+The next item on the list is heating. This one is also pretty basic, in order to conserve energy, they advise for you to use different temperatures in your house based on the season, colder in the winter, warmer in the summer. However, this is made mush easier with sensors. By using sensors, the house can have a range of "preferred" temperatures, and depending on the temperature outside, raise and lower them, or turn off the system entirely when the external temperature is in the range given. It can also be set to turn off or lessen its effect while people aren't home with a bit more complicated of an arrangement of sensors.
+
+Yet another easy to implement factor is doors and locks, simply with electronic strikes, which can open or close the strike itself. this allows a keycard-style system of locks, but also still allows for normal locks and keys to be used. for security purposes, all strikes hould be sized as closely as possible to the latch on the door, as too large and it becomes easy to bypass the lock entirely with anything from specialty tools to a credit card, and if it's too small, your door won't latch at all.
+
+Blinds are where it gets more complicated. These acctualy require a fair amount of work, in this case, done by a motor running the cords. there would also be a need for limit switches or encoders, so as to prevent the motors from running too far.
